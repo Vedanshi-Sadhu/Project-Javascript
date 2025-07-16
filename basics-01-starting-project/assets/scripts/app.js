@@ -1,7 +1,10 @@
-// variables, operators, overwrite
+const defaultResult = 0;
+let currentResult = defaultResult;
 
-let currentResult = 0;
-currentResult = (currentResult + 10) * 3 / 2 - 1;
-let calculatonDescription = '(' + currentResult + '+ 10 ) * 3/2 -1';
+function add(
+    const calcDescription = `${currentResult} + ${userInput.value}`;
+    currentResult = currentResult + parseInt(userInput.value);
+    outputResult(currentResult);
+)
 
-outputResult(currentResult, calculatonDescription);
+addBtn.addEventListener('click', add);
